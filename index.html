@@ -502,6 +502,9 @@
     </div>
 
     <pre><code id="webview_data"></code></pre>
+    
+
+    DemoApp.initData
     <div class="hint">
         Data passed to webview.
         <span id="webview_data_status" class="status_need">Checking hash...</span>
@@ -1128,7 +1131,7 @@
             Telegram.WebApp.onEvent('themeChanged', function () {
                 document.getElementById('theme_data').innerHTML = JSON.stringify(Telegram.WebApp.themeParams, null, 2);
             });
-            document.getElementById('webview_data').innerHTML = JSON.stringify(DemoApp.initDataUnsafe, null, 2);
+            document.getElementById('webview_data').innerHTML = JSON.stringify(DemoApp.initData, null, 2);
             document.getElementById('theme_data').innerHTML   = JSON.stringify(Telegram.WebApp.themeParams, null, 2);
             DemoApp.checkInitData();
         }
